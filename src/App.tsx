@@ -6,7 +6,7 @@ import Tv from "./Routes/Tv";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Switch>
         <Route path="/tv" element={<Tv />} />
@@ -15,7 +15,7 @@ function App() {
         <Route path="/movies/:movieId" element={<Home />} />
         <Route path="/tvs/:tvId" element={<Tv />} />
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
